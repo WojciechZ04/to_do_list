@@ -2,7 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const _ = require("lodash");
-
+//password:
+// Prb6Mud3YhS21JS9
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -12,7 +13,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://adminPete:test123@cluster0.b8ikmjg.mongodb.net/todolistDB");
+mongoose.connect("mongodb+srv://user:Prb6Mud3YhS21JS9@webapps.ntq0f2q.mongodb.net/?retryWrites=true&w=majority");
 
 const itemsSchema = {
   name: {
